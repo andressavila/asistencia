@@ -12,6 +12,8 @@ import { MatLabel } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -19,8 +21,9 @@ import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
-
-  ],
+    LoginComponent,
+    DashboardAdminComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,7 +31,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatLabel,
     MatIconModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    CommonModule
+
 
 
   ],

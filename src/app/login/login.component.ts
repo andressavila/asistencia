@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'login-app',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class LoginComponent implements OnInit {
-  constructor() { }
+
+
+  constructor(private router:Router ) { }
 
   ngOnInit() { }
 
@@ -15,8 +18,15 @@ export class LoginComponent implements OnInit {
   // evento de ,uestra la contra del input de se escribe en el usuario
    clickEvent(event: MouseEvent): void {
    this.hide = !this.hide;
-  event.stopPropagation();
+  event.stopPropagation();}
+
+  public titulo : string ='Industrial Aceitera de Casanare';
+
+  login() {
+    alert('bienvenido al sistema de asistencia');
+    this.router.navigate(['control-admin'])
 
 
-}
+  }
+
 }
