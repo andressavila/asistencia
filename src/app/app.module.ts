@@ -14,9 +14,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { CommonModule } from '@angular/common';
-
-
-
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,11 @@ import { CommonModule } from '@angular/common';
     MatIconModule,
     MatInputModule,
     MatButtonModule,
-    CommonModule
+    CommonModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatListModule
 
 
 

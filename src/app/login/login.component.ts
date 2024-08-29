@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
 
-  constructor(private router:Router ) { }
+  constructor(private router:Router , private grupbrider : FormBuilder ) { }
 
   ngOnInit() { }
 
@@ -22,11 +23,11 @@ export class LoginComponent implements OnInit {
 
   public titulo : string ='Industrial Aceitera de Casanare';
 
+  //metodo para recoger los datos
   login() {
     alert('bienvenido al sistema de asistencia');
-    this.router.navigate(['control-admin'])
+    this.router.navigate(['control-admin']) }
 
 
-  }
 
 }
