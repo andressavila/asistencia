@@ -11,4 +11,12 @@ export class LoginComponent implements OnInit {
   ngOnInit() { }
 
 
+  hide = true;
+  // evento de ,uestra la contra del input de se escribe en el usuario
+   clickEvent(event: MouseEvent): void {
+   this.hide = !this.hide;
+  event.stopPropagation();
+
+
+}
 }

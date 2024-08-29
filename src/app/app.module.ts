@@ -6,14 +6,31 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
+//import de angular
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatLabel } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatFormFieldModule,
+    MatLabel,
+    MatIconModule,
+    MatInputModule,
+    MatButtonModule
+
+
   ],
   providers: [
     provideAnimationsAsync()
