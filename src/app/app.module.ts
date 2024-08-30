@@ -19,11 +19,13 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatCardModule} from '@angular/material/card';
 // componentes del admin
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavegationComponent } from './navegation/navegation.component';
-
+import { InicioComponent } from './components/paginas/inicio/principal.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,8 @@ import { NavegationComponent } from './navegation/navegation.component';
     DashboardAdminComponent,
     HeaderComponent,
     FooterComponent,
-    NavegationComponent
+    NavegationComponent,
+    InicioComponent
    ],
   imports: [
     BrowserModule,
@@ -46,7 +49,9 @@ import { NavegationComponent } from './navegation/navegation.component';
     MatMenuModule,
     MatSidenavModule,
     MatListModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatCardModule,
+    MatGridListModule
 
 
 

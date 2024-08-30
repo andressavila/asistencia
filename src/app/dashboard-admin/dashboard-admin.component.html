@@ -1,13 +1,15 @@
 <!-- se puede llamar en un componente para reutilizarlo los usuarios normales -->
  <div class="grid grid-cols-1 gap-4">
-  <app-header></app-header>
+   <app-header></app-header>
  </div>
- <div class="grid grid-cols-12 gap-4 h-5/6">
-  <div class="col-span-2  border-r-4 border-lime-400 w-40">
-    <navegation-admin></navegation-admin>
+ <div class="grid grid-cols-12 lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-12  h-5/6">
+      <div class="col-span-2  border-r-4 border-lime-400 ">
+        <navegation-admin></navegation-admin>
+      </div>
+      <div class="m-3 grid grid-cols-12">
+        <router-outlet></router-outlet>
+      </div>
   </div>
-
-</div>
 <div class="">
   <footer-admin></footer-admin>
 </div>
