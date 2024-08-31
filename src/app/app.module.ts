@@ -27,6 +27,7 @@ import { NavegationComponent } from './navegation/navegation.component';
 import { InicioComponent } from './components/paginas/inicio/principal.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { SharedModule } from './shared/shared.module';
+import { PruebaComponent } from './prueba/prueba.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,8 @@ import { SharedModule } from './shared/shared.module';
     HeaderComponent,
     FooterComponent,
     NavegationComponent,
-    InicioComponent
+    InicioComponent,
+    PruebaComponent
    ],
   imports: [
     BrowserModule,
