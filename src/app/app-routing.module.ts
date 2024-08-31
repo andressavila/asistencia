@@ -10,7 +10,7 @@ const routes: Routes = [
  {path:'', component:LoginComponent},
  {path:'***', redirectTo:'login', pathMatch:'full'},
  {path:'login',component:LoginComponent},
- {path:'control-admin',component:PruebaComponent,
+ {path:'control-admin',component:DashboardAdminComponent,
   children:[
     {path:'inicio',component:InicioComponent}
   ]
