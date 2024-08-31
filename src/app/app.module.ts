@@ -26,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavegationComponent } from './navegation/navegation.component';
 import { InicioComponent } from './components/paginas/inicio/principal.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { SharedModule } from './shared/shared.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +52,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatListModule,
     MatBadgeModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    SharedModule
 
 
 
