@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardsComponent } from './card-compoenent/card.component';
+import { CardsComponent } from './card/card.component';
 // importaciones de angular material
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from "@angular/material/card";
