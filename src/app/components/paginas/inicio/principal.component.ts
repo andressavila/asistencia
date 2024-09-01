@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 
 
 @Component({
@@ -17,7 +17,9 @@ import { Component, OnInit } from '@angular/core';
 export class InicioComponent implements OnInit {
 public rol : string ='Control Administrador';
 
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit() { }
 }

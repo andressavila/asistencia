@@ -2,6 +2,13 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, inject, OnInit } from '@angular/core';
 import { map } from 'rxjs';
 
+export interface Tile {
+  color: string;
+  cols: number;
+  rows: number;
+  text: string;
+}
+
 @Component({
   selector: 'shared-card',
   templateUrl: './card.component.html'
@@ -9,6 +16,7 @@ import { map } from 'rxjs';
 
 export class CardsComponent implements OnInit {
   constructor() { }
+
 
   ngOnInit() { }
 
