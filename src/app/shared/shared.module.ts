@@ -5,6 +5,9 @@ import { CardsComponent } from './card-compoenent/card.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
+import {MatGridListModule} from '@angular/material/grid-list';
+import { MatIconModule } from "@angular/material/icon";
+import {MatMenuModule} from "@angular/material/menu";
 @NgModule({
   declarations: [
     CardsComponent
@@ -13,7 +16,10 @@ import { MatButtonModule } from "@angular/material/button";
     CommonModule,
     MatInputModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
+    MatIconModule,
+    MatMenuModule
   ],
   exports:[
     CardsComponent

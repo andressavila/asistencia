@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 <mat-toolbar class=" shadow-md" >
   <span>{{rol}}</span>
 </mat-toolbar>
-<div class="m-24">
+<div class="">
 <shared-card></shared-card>
 </div>
 
