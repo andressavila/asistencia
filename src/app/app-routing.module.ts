@@ -4,6 +4,7 @@ import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.compo
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './components/paginas/inicio/principal.component';
 import { PruebaComponent } from './prueba/prueba.component';
+import { Prueba2Component } from './prueba2/prueba2.component';
 
 const routes: Routes = [
 

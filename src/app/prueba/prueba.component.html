@@ -1,17 +1,14 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'side' : 'side'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item >Link 1</a>
-      <a mat-list-item >Link 2</a>
-      <a mat-list-item >Link 3</a>
+      <navegation-admin></navegation-admin>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar  class="border-b-4 border-lime-300">
+    <mat-toolbar  class="border-b-4 border-lime-400 ">
       @if (isHandset$ | async) {
         <button
           type="button"
@@ -20,9 +17,27 @@
           (click)="drawer.toggle()">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-      }
-  
+        <!-- control de headers -->
+         <a class="flex-auto font-bold  font-sans">Industrial Aceitera de Casanare</a>
+         <a mat-button class="" [matMenuTriggerFor]="notify">Notificacion<mat-icon class="mat-18">notifications</mat-icon></a>
+        <mat-menu #notify>
+          <a mat-menu-item><mat-icon class="mat-18" matBadge = "15">notifications</mat-icon>Notificaciones</a>
+        </mat-menu>
+        <a mat-button class="" [matMenuTriggerFor]="menu"><mat-icon class="mat-18">manage_accounts</mat-icon>administrador</a>
+        <mat-menu #menu >
+            <a mat-menu-item ><mat-icon class="mat-18">settings</mat-icon>Configuracion</a>
+            <a mat-menu-item [matMenuTriggerFor]="users"><mat-icon class="mat-18">group</mat-icon>Usuarios</a>
+            <mat-menu #users>
+              <a mat-menu-item ><mat-icon class="mat-18">person</mat-icon> usuarios 1</a>
+              <a mat-menu-item ><mat-icon class="mat-18">person</mat-icon> usuarios 2</a>
+              <a mat-menu-item ><mat-icon class="mat-18">person</mat-icon> usuarios 3</a>
+              <a mat-menu-item ><mat-icon class="mat-18">person</mat-icon> usuarios 4</a>
+              <a mat-menu-item ><mat-icon class="mat-18">person</mat-icon> usuarios 5</a>
+              <a mat-menu-item ><mat-icon class="mat-18">person</mat-icon> usuarios 6</a>
+            </mat-menu>
+            <a [routerLink]="['/login']" mat-menu-item ><mat-icon class="mat-18">logout</mat-icon>Cerrar Session</a>
+          </mat-menu>}
     </mat-toolbar>
-
   </mat-sidenav-content>
+
 </mat-sidenav-container>
