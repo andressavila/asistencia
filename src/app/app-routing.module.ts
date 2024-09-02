@@ -4,6 +4,7 @@ import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.compo
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './components/paginas/inicio/principal.component';
 import { EmpleadoComponent } from './components/paginas/entradas/empleado-entrada.component';
+import { RegistroComponent } from './components/registro/registro.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
  {path:'control-admin',component:DashboardAdminComponent,
   children:[
     {path:'inicio',component:InicioComponent},
-    {path:'entradaempleado', component:EmpleadoComponent}
+    {path:'entradaempleado', component:EmpleadoComponent},
+    {path:'registroempleado', component:RegistroComponent}
   ]
  }
 

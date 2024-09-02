@@ -30,6 +30,7 @@ import { SharedModule } from './shared/shared.module';
 import { EmpleadoComponent } from './components/paginas/entradas/empleado-entrada.component';
 import {MatTableModule} from '@angular/material/table';
 import { tableComponent } from './components/tablas/tabla-empleado.component';
+import { RegistroComponent } from './components/registro/registro.component';
 
 
 
@@ -43,7 +44,8 @@ import { tableComponent } from './components/tablas/tabla-empleado.component';
     NavegationComponent,
     InicioComponent,
     EmpleadoComponent,
-    tableComponent
+    tableComponent,
+    RegistroComponent
 
 
    ],
