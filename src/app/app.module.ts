@@ -28,6 +28,8 @@ import { InicioComponent } from './components/paginas/inicio/principal.component
 import {MatGridListModule} from '@angular/material/grid-list';
 import { SharedModule } from './shared/shared.module';
 import { EmpleadoComponent } from './components/paginas/entradas/empleado-entrada.component';
+import {MatTableModule} from '@angular/material/table';
+import { tableComponent } from './components/tablas/tabla-empleado.component';
 
 
 
@@ -40,7 +42,8 @@ import { EmpleadoComponent } from './components/paginas/entradas/empleado-entrad
     FooterComponent,
     NavegationComponent,
     InicioComponent,
-    EmpleadoComponent
+    EmpleadoComponent,
+    tableComponent
 
 
    ],
@@ -60,7 +63,8 @@ import { EmpleadoComponent } from './components/paginas/entradas/empleado-entrad
     MatBadgeModule,
     MatCardModule,
     MatGridListModule,
-    SharedModule
+    SharedModule,
+    MatTableModule
 
 
 
