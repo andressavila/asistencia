@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './components/paginas/inicio/principal.component';
+import { EmpleadoComponent } from './components/paginas/entradas/empleado-entrada.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
  {path:'login',component:LoginComponent},
  {path:'control-admin',component:DashboardAdminComponent,
   children:[
-    {path:'inicio',component:InicioComponent}
+    {path:'inicio',component:InicioComponent},
+    {path:'entradaempleado', component:EmpleadoComponent}
   ]
  }
 

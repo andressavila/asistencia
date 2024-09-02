@@ -27,6 +27,7 @@ import { NavegationComponent } from './navegation/navegation.component';
 import { InicioComponent } from './components/paginas/inicio/principal.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { SharedModule } from './shared/shared.module';
+import { EmpleadoComponent } from './components/paginas/entradas/empleado-entrada.component';
 
 
 
@@ -39,6 +40,7 @@ import { SharedModule } from './shared/shared.module';
     FooterComponent,
     NavegationComponent,
     InicioComponent,
+    EmpleadoComponent
 
 
    ],
